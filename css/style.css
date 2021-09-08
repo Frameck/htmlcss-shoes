@@ -7,3 +7,63 @@
 body {
     font-family: 'Rubik Mono One', sans-serif;
 }
+
+header {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    z-index: 2;
+}
+
+header nav ul {
+    list-style: none;
+    display: inline-block;
+}
+
+header nav ul li {
+    float: left;
+    margin-right: 10px;
+}
+  
+header nav ul a {
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 30px;
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+}
+
+header nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main section {
+    height: 100vh;
+    position: relative;
+}
+
+main section:nth-child(1) {
+    background-color: red;
+}
+
+main section:nth-child(2) {
+    background-color: green;
+}
+
+main section:nth-child(3) {
+    background-color: yellow;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 30px;
+}
